@@ -51,19 +51,19 @@ class AlipayTradeService {
 		$this->signtype=$alipay_config['sign_type'];
 
 		if(empty($this->appid)||trim($this->appid)==""){
-			throw new Exception("appid should not be NULL!");
+			throw new \Exception("appid should not be NULL!");
 		}
 		if(empty($this->private_key)||trim($this->private_key)==""){
-			throw new Exception("private_key should not be NULL!");
+			throw new \Exception("private_key should not be NULL!");
 		}
 		if(empty($this->alipay_public_key)||trim($this->alipay_public_key)==""){
-			throw new Exception("alipay_public_key should not be NULL!");
+			throw new \Exception("alipay_public_key should not be NULL!");
 		}
 		if(empty($this->charset)||trim($this->charset)==""){
-			throw new Exception("charset should not be NULL!");
+			throw new \Exception("charset should not be NULL!");
 		}
 		if(empty($this->gateway_url)||trim($this->gateway_url)==""){
-			throw new Exception("gateway_url should not be NULL!");
+			throw new \Exception("gateway_url should not be NULL!");
 		}
 
 	}
