@@ -1,0 +1,21 @@
+{
+    "name": "lampol/alipay",
+    "description": "支付宝支付 pc+wap",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lampol",
+            "email": "807968192@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload":{
+	"psr-4":{
+	     "lampol\\pc\\":"src/pc",
+	     "lampol\\wap\\":"src/wap",
+	     "lampol\\common\\":"src/common"
+		} 
+    }
+}
